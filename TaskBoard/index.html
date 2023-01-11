@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+      
+        <nav>
+             <h2>Simple Task board</h2> 
+        </nav>
+      
+      <main>
+        <div class = "todo"> 
+            <form  class = "todo_form">
+                <input type="text" placeholder="Task title" class = "input_title">
+                
+                <textarea id="input_body" cols="30" rows="10" placeholder="Description"></textarea>
+                <input class="buttonpurp" type="submit" value="Create">
+            </form>
+        </div>
+        <div>
+            <label for="todo_tasks"> TODO</label>
+            <ul class = "todo_tasks" >
+                
+                <li class = "tasks" >
+                    <h3>List group item heading</h3>
+                    <p>lorem ipsuawds</p>
+                </li>
+                <li class = "tasks">
+                    <h3>List group item heading</h3>
+                    <p>lorem ipsuawds</p>
+                </li>
+                <li class = "tasks">
+                    <h3>List group item heading</h3>
+                    <p>lorem ipsuawds</p>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class = "ContainerOfButtonForChangingTasks">
+            <button id= "moveTaskToInProgressButton" > > </button>
+        </div>
+        <div>
+            <label for="in_progress"> In progress</label>
+            
+            <ul class="in_progress">
+            <li>
+                <h3>List group item heading</h3>
+                <p>lorem ipsuawds</p>
+            </li>
+            <li>
+                <h3>List group item heading</h3>
+                <p>lorem ipsuawds</p>
+            </li>
+            <li>
+                <h3>List group item heading</h3>
+                <p>lorem ipsuawds</p>
+            </li>
+        </ul>
+</div>
+<div class = " ContainerOfButtonForChangingTasks">
+    <button id= "moveTaskToDoneButton" > > </button>
+</div>    
+
+        <div>
+            <label for="finished"> Done</label>
+            
+            <ul class="finished">
+                <li>
+                <h3>List group item heading</h3>
+                <p>lorem ipsuawds</p>
+            </li>
+            <li>
+                <h3>List group item heading</h3>
+                <p>lorem ipsuawds</p>
+            </li>
+            <li>
+                <h3>List group item heading</h3>
+                <p>lorem ipsuawds</p>
+            </li>
+        </ul>
+</div>
+      </main>
+
+      <script src="./app.js"> </script>
+</body>
+    
+</html>
